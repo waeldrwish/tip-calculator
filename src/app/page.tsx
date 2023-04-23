@@ -12,36 +12,37 @@ export default function page() {
       <div
         className="w-1/4 border border-indigo-60 drop-shadow-sm bg-slate-200 rounded-md m-auto mt-10 p-2">
         <h1 className="text-2xl font-bold m-2 text-center">Tip-Calculator</h1>
-        <form>
+        <form className='w-full'>
           <p className="ml-2">Bill Amount</p>
           <input type="number" className="w-full border border-dark rounded-md p-2"
             placeholder="Bill Amount"
             onChange={(e) => {
               setBill(parseFloat(e.target.value));
             }}></input>
-          <p className="mt-2 ml-2">Tip Percentage</p>
-          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          <p className="mt-2 ml-2" w-full>Tip Percentage</p>
+          <br/>
+          <a className="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2 inline-flex"
           onClick={(e)=>{
             setTip(0.05);
           }}>5%</a>
-          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          <a className="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2 inline-flex"
           onClick={()=>{
             setTip(0.1);
           }}>10%</a>
-          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          <a className="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2 inline-flex"
           onClick={()=>{
             setTip(0.15);
           }}>15%</a>
-          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          <a className="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2 inline-flex"
           onClick={()=>{
             setTip(0.2);
           }}>20%</a>
-          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          <a className="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2 inline-flex"
           onClick={()=>{
             setTip(0.25);
           }}>25%</a>
           <input type="number"
-            className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white text-center text-white"
+            className="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2 inline-flex"
             placeholder="other"
             onChange={(e) => {
               setTip(parseFloat(e.target.value));
