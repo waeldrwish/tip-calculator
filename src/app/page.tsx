@@ -21,20 +21,24 @@ export default function page() {
             }}></input>
           <p className="mt-2 ml-2">Tip Percentage</p>
           <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
-          onClick={()=>{
+          onClick={(e)=>{
             setTip(0.05);
-          }}>10%</a>
+          }}>5%</a>
           <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={()=>{
             setTip(0.1);
-          }}>15%</a>
+          }}>10%</a>
           <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={()=>{
             setTip(0.15);
+          }}>15%</a>
+          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          onClick={()=>{
+            setTip(0.2);
           }}>20%</a>
           <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={()=>{
-            setTip(0.20);
+            setTip(0.25);
           }}>25%</a>
           <input type="number"
             className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white text-center text-white"
