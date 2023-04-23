@@ -1,4 +1,4 @@
-# README
+# [Tip Culculator](https://64450c060e762e1195928fe4--cheery-creponne-dd0c8d.netlify.app/)
 This is a React component that creates a simple tip calculator.
 
 # Usage
