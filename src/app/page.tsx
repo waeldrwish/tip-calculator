@@ -20,26 +20,26 @@ export default function page() {
               setBill(parseFloat(e.target.value));
             }}></input>
           <p className="mt-2 ml-2">Tip Percentage</p>
-          <button className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={(e)=>{
             
-          }}>5%</button>
-          <button className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          }}>5%</a>
+          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={()=>{
             setTip(0.05);
-          }}>10%</button>
-          <button className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          }}>10%</a>
+          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={()=>{
             setTip(0.1);
-          }}>15%</button>
-          <button className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          }}>15%</a>
+          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={()=>{
             setTip(0.15);
-          }}>20%</button>
-          <button className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
+          }}>20%</a>
+          <a className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white hover:bg-sky-500/75"
           onClick={()=>{
             setTip(0.20);
-          }}>25%</button>
+          }}>25%</a>
           <input type="number"
             className="w-1/4 bg-sky-500/100 p-3 rounded-md m-2 text-white text-center text-white"
             placeholder="other"
